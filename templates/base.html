@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nostyle.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://www.isvr.org.in/">ISVR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://www.isvr.org.in/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% block main %}
+    {% endblock main %}
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-box">
+                    <img src="/static/images/logo.png?raw=true" alt="ISVR">
+                    <p>ISVR is a comprehensive method of delivering significant academic and vocational knowledge to
+                        students in the fields of science, computer programs, technology, research, and engineering.</p>
+                </div>
+                <div class="col-md-4 footer-box">
+                    <p><b class="text-uppercase">Contact Us</b></p>
+                    <p class="font-weight-light">
+                        <i class="fa-solid fa-location-dot"></i> ISVR Research Lab, RCE, Roorkee, Uttarakhand 247667
+                    </p>
+                    <p class="font-weight-light">
+                        <i class="fa-solid fa-location-dot"></i> ISVR, Jubilee Market, Laxmi Bazar, Dhenkanal 759001
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i> +91 88820 54894 / +91 98610 55575
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope"></i> <a href="mailto:info@isvr.org.in"
+                            class="text-light">info@isvr.org.in</a>
+                    </p>
+                </div>
+                <div class="col-md-4 footer-box">
+                    <p><b class="text-uppercase">Important Links</b></p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="/" class="text-light">Home</a>
+                        </li>
+                        <li>
+                            <a href="/#about" class="text-light">About Us</a>
+                        </li>
+                        <li>
+                            <a href="/#services" class="text-light">Services</a>
+                        </li>
+                        <li>
+                            <a href="https://isvr-cert.herokuapp.com/" class="text-light">Certificates</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3">&copy; 2022 Copyright:
+            <a href="/" class="text-light"> isvr.org.in</a>.
+            Designed by: <a href="https://www.linkedin.com/in/somen-samanta-6375a921a/">Somen</a>
+        </div>
+    </section>
+
+    <a class="gototop" href="#">↑</a>
+
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-mode")
+        }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

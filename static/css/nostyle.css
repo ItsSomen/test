@@ -1,0 +1,26 @@
+.main wrapper{
+    display: flex;
+    align-items: center;
+    height: 85vh;
+}
+
+.content{
+    height: 100%;
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.titl{
+    font-size: 2rem;
+}
+
+.title-head{
+    font-size: 3rem;
+}
+
+.error_img{
+    width: 100%;
+}

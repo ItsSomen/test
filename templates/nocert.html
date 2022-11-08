@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Certificate | {{std.student_name}}{% endblock %}
+{% block main %}
+<div class="body-wrapper">
+    <div class="main wrapper">
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="content">
+                        <div class="titl">Ooops...</div>
+                        <h2 class="title-head">Certificate Not Found.</h2>
+                        <p class="des">The certificate you are looking for is not present in our database. If you are
+                            thinking its a mistake <a href="https://contact.isvr.org.in/">Contact Us</a> and let we
+                            know.
+                        </p>
+                        <a href="#" class="btn btn-outline-info">Go back</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="error_img"
+                        src="https://img.freepik.com/free-vector/error-404-concept-illustration_114360-1811.jpg?w=740&t=st=1667835963~exp=1667836563~hmac=80c4ed05fc71fa2aa93758f031f3bf3a03f59fd1412ba2acfbf59b70c17c8e5b"
+                        alt="404 Not Found">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
